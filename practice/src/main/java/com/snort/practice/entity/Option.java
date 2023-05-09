@@ -25,7 +25,7 @@ public class Option {
     private String option3;
     private String option4;
     private String title;
-//    @Transient
+    @Transient
     private String correctOption;
 
 

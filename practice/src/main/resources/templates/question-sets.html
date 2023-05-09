@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+  <meta charset="UTF-8">
+  <title>Question Sets</title>
+</head>
+<body>
+<h1>List of Question Sets</h1>
+<ul>
+  <li th:each="questionSet : ${questionSets}">
+    <a th:href="@{/question-sets/{id}(id=${questionSet.id})}" th:text="${questionSet.name}"></a>
+  </li>
+</ul>
+</body>
+</html>
